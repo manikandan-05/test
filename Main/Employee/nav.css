@@ -1,0 +1,21 @@
+nav {
+    padding: 1rem;
+    background-color: #f8f9fa; /* Light background color for the navigation bar */
+    text-align: center;
+}
+
+.btn-back {
+    background-color: #87ceeb; /* Light blue background color */
+    color: white; /* White text color */
+    border: 2px solid #87ceeb; /* Full border with light blue color */
+    border-radius: 0.25rem; /* Rounded corners */
+    padding: 0.5rem 1rem; /* Padding around the button */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition for hover effects */
+}
+
+.btn-back:hover {
+    background-color: #b0e0e6; /* Slightly lighter blue color on hover */
+    border-color: #b0e0e6; /* Match border color on hover */
+}

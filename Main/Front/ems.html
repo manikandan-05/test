@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <link rel="icon" href="images/fevicon.png" type="image/gif" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Claidas Hrms</title>
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+ <!-- fonts style -->
+ <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+ <!-- font awesome style -->
+ <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+ <!-- Custom styles for this template -->
+ <link href="css/style.css" rel="stylesheet" />
+ <!-- responsive style -->
+ <link href="css/responsive.css" rel="stylesheet" />
+ <!-- <link href="css\style.scss" rel="stylesheet" /> -->
+ <link rel="icon" type="images/png" href="images/favicon.png">
+
+</head>
+
+<body class="sub_page">
+
+  <!-- <div class="hero_area"> -->
+   <!-- header section strats -->
+   <header class="headerr_section">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg custom_nav-container ">
+        <a class="navbar-brand" href="index.php">
+          <img src="images\logo-blue.png" alt="Claidas__2_-removebg-preview.png" class="logo"/>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class=""> </span>
+        </button>
+
+        <div class="collapse navbar-collapse " id="navbarSupportedContent"><style>
+          /* .collapse navbar-collapse {
+            font-family: "Popins",sans-serif;
+                padding: 3px 15px;
+                margin: 5px 5px;
+                color: black;
+                text-align: center;
+                text-transform: uppercase;
+                font-size: small;
+                font-weight: 500;
+                line-height: 1.5;
+                font-size: 12px; */
+
+          
+        </style>
+          <ul class="navbar-nav  ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.php">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.php#About"> About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.php#OUR SERVICES">Services</a>
+            </li>
+         
+            <li class="nav-item">
+              <a class="nav-link" href="index.php#Contact US">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">login</a>
+            </li>
+          </ul>
+          <div class="quote_btn-container">
+            <form class="form-inline">
+              <!-- <button class="btn   nav_search-btn" type="submit">
+                <i class="fa fa-search" aria-hidden="true"></i> -->
+              </button>
+            </form>
+  
+              </span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <script>
+      let lastScrollTop = 0;
+      const header = document.querySelector('.header_section');
+    
+      window.addEventListener('scroll', function() {
+        let scrollDown = window.pageYOffset || document.documentElement.scrollDown;
+    
+        if (scrollDown > lastscrollDown) {
+          // Scrolling down
+          header.style.down = '-100%'; // Adjust this value based on the height of your header
+        } else {
+          // Scrolling up
+          header.style.down = '0';
+        }
+        lastScrollDown = scrollDown;
+      });
+    </script>
+  </header>
+    <style>
+      /*header section*/
+
+.hero_areaa {
+position: relative;
+background-color: #020230;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+margin-top: 100px;
+}
+
+.sub_page {
+.hero_area {
+  min-height: auto;
+}
+
+}
+
+.headerr_section {
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 1000;
+transition: top 0.3s;
+}
+
+.container-fluid {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+
+.navbar-brand {
+span {
+  font-weight: bold;
+  color: $white;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+}
+
+.custom_nav-container {
+padding: 11px 0px;
+width: 105%;
+right: 2%;
+}
+
+.navbar-nav 
+  .nav-item 
+    .nav-link {
+padding: 3px 15px;
+margin: 10px 15px;
+color: black;
+text-align: center;
+text-transform: uppercase;
+font-size: small;
+font-size: 14px;
+font-weight: 600;
+
+    }
+  
+.custom_nav-container .nav_search-btn {
+width: 35px;
+height: 35px;
+padding: 0;
+border: none;
+color: #000;
+margin: 0 20px;
+}
+
+.custom_nav-container .navbar-toggler {
+outline: none;
+}
+
+.custom_nav-container .navbar-toggler {
+padding: 0;
+width: 37px;
+height: 42px;
+transition: all 0.3s;
+}
+span {
+  display: block;
+  width: 70px;
+  height: 4px;
+  background-color: $white;
+  margin: 7px 0;
+  transition: all 0.3s;
+  position: relative;
+  border-radius: 5px;
+  transition: all 0.3s;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $white;
+    top: -10px;
+    border-radius: 5px;
+    transition: all 0.3s;
+  }
+
+  &::after {
+    top: 10px;
+  }
+
+&[aria-expanded="true"] {
+  transform: rotate(360deg);
+
+  span {
+    transform: rotate(45deg);
+
+    &::before,
+    &::after {
+      transform: rotate(90deg);
+      top: 0;
+    }
+  }
+
+  .s-1 {
+    transform: rotate(45deg);
+    margin: 0;
+    margin-bottom: -4px;
+  }
+
+  .s-2 {
+    display: none;
+  }
+
+  .s-3 {
+    transform: rotate(-45deg);
+    margin: 0;
+    margin-top: -4px;
+  }
+}
+
+&[aria-expanded="false"] {
+
+  .s-1,
+  .s-2,
+  .s-3 {
+    transform: none;
+  }
+}
+
+
+.quote_btn-container {
+display: flex;
+align-items: center;
+}
+
+a {
+  color: #000;
+  text-transform: uppercase;
+
+  span {
+    margin-left: 5px;
+  }
+}
+
+
+/*end header section*/
+
+/* slider section */
+.slider_section {
+flex: 1;
+display: flex;
+align-items: center;
+padding-top: 45px;
+padding-bottom: 90px;
+}
+
+.row {
+  align-items: center;
+}
+
+#customCarousel1 {
+  width: 100%;
+  position: unset;
+}
+
+.detail-box {
+  color: $white;
+
+  h1 {
+    font-weight: bold;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+   
+
+    span {
+      font-size: 3rem;
+      color: $primary1;
+    }
+  }
+
+  .btn-box {
+    display: flex;
+    margin: 0 -5px;
+  }
+
+  a {
+    margin: 5px;
+    width: 195px;
+    text-align: center;
+  }
+
+  .btn-1 {
+    @include hero_btn($primary1, $white, 10px, 15px, 5px);
+  }
+
+  .btn-2 {
+    @include hero_btn($primary2, $white, 10px, 15px, 5px);
+  }
+}
+
+.img-box {
+  img {
+    width: 100%;
+  }
+}
+
+.carousel_btn-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  z-index: 3;
+  font-size: 22px;
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: unset;
+    width: 50px;
+    height: 50px;
+    background-color: $primary1;
+    opacity: 1;
+    font-size: 28px;
+    transition: all .3s;
+
+    &:hover {
+      background-color: $white;
+      color: $black;
+    }
+  }
+}
+    </style>
+    </header>  
+  <!-- end header section -->   
+      
+    <!-- end header section -->
+  <!-- service section -->
+
+   <!-- service section -->
+
+   <section>
+    <div class="ag-maecenas-block">
+      <div class="ag-maecenas_title"><br>
+        <div class="ag-format-container">
+          EMPLOYEE MANAGEMENT
+        </div>
+      </div>
+      <!-- .ag-maecenas_title -->
+        <section class="ag-maecenas_box">
+          <article class="ag-maecenas_item">
+            <div class="ag-maecenas_descr">
+              <!-- <div class="ag-maecenas_title-item">
+                Aenean massa
+              </div>
+              <div class="ag-maecenas_tagline-item">
+                Quisque
+              </div> -->
+              <ul class="ag-rrequirement_list">
+                
+                <style>
+                  ul {
+                      padding: 0; /* Remove default padding from the list */
+                      margin: 0; /* Remove default margin from the list */
+                  }
+          
+                  li {
+                      text-align: justify; /* Justify the text within each list item */
+                      margin-bottom: 10px; /* Add space between list items */
+                  }
+              </style>
+
+                 <li>
+                  Maintains comprehensive profiles for each employee, including personal information, job details, and performance history.
+                </li>
+
+                <li>
+                  Monitors employee performance through regular evaluations and feedback mechanisms.
+                </li>
+                <li>
+                  Facilitates access to training programs and professional development opportunities.
+                </li>
+                <li>
+                  Tracks attendance records and manages leave requests efficiently.
+                </li>
+                <li>
+                  Ensures adherence to labor laws and company policies regarding employee rights and obligations.
+                </li>
+                <li>
+                  Promotes employee engagement through communication tools and feedback channels.
+                </li>
+              </ul>
+            </div>
+            <div class="ag-maecenas_img-box">
+             
+              <img src="images\10705723_44658-removebg-preview.png" alt="">
+                <style>
+                  .ag-maecenas_img-box {
+                    text-align: center; /* Center the image horizontally */
+                    padding: 20px; /* Add some padding around the container */
+                }
+                
+                .ag-maecenas_img-box img {
+                    max-width: 100%; /* Ensure the image doesn't exceed the container's width */
+                    height: auto; /* Maintain the aspect ratio of the image */
+                    /* Optional: Add a border around the image */
+                    border-radius: 8px; /* Optional: Round the corners of the image */
+                    margin-top: -100px
+                }
+                </style>
+            </div>
+           
+          </article>
+      
+         
+    
+    <svg xmlns="http://www.w3.org/2000/svg" class="svg-img-block">
+      <symbol id="svg-img-1" viewBox="175.7 78 490.6 436.9">
+        <g fill="#61dafb">
+          <path d="m666.3 296.5c0-32.5-40.7-63.3-103.1-82.4 14.4-63.6 8-114.2-20.2-130.4-6.5-3.8-14.1-5.6-22.4-5.6v22.3c4.6 0 8.3.9 11.4 2.6 13.6 7.8 19.5 37.5 14.9 75.7-1.1 9.4-2.9 19.3-5.1 29.4-19.6-4.8-41-8.5-63.5-10.9-13.5-18.5-27.5-35.3-41.6-50 32.6-30.3 63.2-46.9 84-46.9v-22.3c-27.5 0-63.5 19.6-99.9 53.6-36.4-33.8-72.4-53.2-99.9-53.2v22.3c20.7 0 51.4 16.5 84 46.6-14 14.7-28 31.4-41.3 49.9-22.6 2.4-44 6.1-63.6 11-2.3-10-4-19.7-5.2-29-4.7-38.2 1.1-67.9 14.6-75.8 3-1.8 6.9-2.6 11.5-2.6v-22.3c-8.4 0-16 1.8-22.6 5.6-28.1 16.2-34.4 66.7-19.9 130.1-62.2 19.2-102.7 49.9-102.7 82.3 0 32.5 40.7 63.3 103.1 82.4-14.4 63.6-8 114.2 20.2 130.4 6.5 3.8 14.1 5.6 22.5 5.6 27.5 0 63.5-19.6 99.9-53.6 36.4 33.8 72.4 53.2 99.9 53.2 8.4 0 16-1.8 22.6-5.6 28.1-16.2 34.4-66.7 19.9-130.1 62-19.1 102.5-49.9 102.5-82.3zm-130.2-66.7c-3.7 12.9-8.3 26.2-13.5 39.5-4.1-8-8.4-16-13.1-24-4.6-8-9.5-15.8-14.4-23.4 14.2 2.1 27.9 4.7 41 7.9zm-45.8 106.5c-7.8 13.5-15.8 26.3-24.1 38.2-14.9 1.3-30 2-45.2 2-15.1 0-30.2-.7-45-1.9-8.3-11.9-16.4-24.6-24.2-38-7.6-13.1-14.5-26.4-20.8-39.8 6.2-13.4 13.2-26.8 20.7-39.9 7.8-13.5 15.8-26.3 24.1-38.2 14.9-1.3 30-2 45.2-2 15.1 0 30.2.7 45 1.9 8.3 11.9 16.4 24.6 24.2 38 7.6 13.1 14.5 26.4 20.8 39.8-6.3 13.4-13.2 26.8-20.7 39.9zm32.3-13c5.4 13.4 10 26.8 13.8 39.8-13.1 3.2-26.9 5.9-41.2 8 4.9-7.7 9.8-15.6 14.4-23.7 4.6-8 8.9-16.1 13-24.1zm-101.4 106.7c-9.3-9.6-18.6-20.3-27.8-32 9 .4 18.2.7 27.5.7 9.4 0 18.7-.2 27.8-.7-9 11.7-18.3 22.4-27.5 32zm-74.4-58.9c-14.2-2.1-27.9-4.7-41-7.9 3.7-12.9 8.3-26.2 13.5-39.5 4.1 8 8.4 16 13.1 24s9.5 15.8 14.4 23.4zm73.9-208.1c9.3 9.6 18.6 20.3 27.8 32-9-.4-18.2-.7-27.5-.7-9.4 0-18.7.2-27.8.7 9-11.7 18.3-22.4 27.5-32zm-74 58.9c-4.9 7.7-9.8 15.6-14.4 23.7-4.6 8-8.9 16-13 24-5.4-13.4-10-26.8-13.8-39.8 13.1-3.1 26.9-5.8 41.2-7.9zm-90.5 125.2c-35.4-15.1-58.3-34.9-58.3-50.6s22.9-35.6 58.3-50.6c8.6-3.7 18-7 27.7-10.1 5.7 19.6 13.2 40 22.5 60.9-9.2 20.8-16.6 41.1-22.2 60.6-9.9-3.1-19.3-6.5-28-10.2zm53.8 142.9c-13.6-7.8-19.5-37.5-14.9-75.7 1.1-9.4 2.9-19.3 5.1-29.4 19.6 4.8 41 8.5 63.5 10.9 13.5 18.5 27.5 35.3 41.6 50-32.6 30.3-63.2 46.9-84 46.9-4.5-.1-8.3-1-11.3-2.7zm237.2-76.2c4.7 38.2-1.1 67.9-14.6 75.8-3 1.8-6.9 2.6-11.5 2.6-20.7 0-51.4-16.5-84-46.6 14-14.7 28-31.4 41.3-49.9 22.6-2.4 44-6.1 63.6-11 2.3 10.1 4.1 19.8 5.2 29.1zm38.5-66.7c-8.6 3.7-18 7-27.7 10.1-5.7-19.6-13.2-40-22.5-60.9 9.2-20.8 16.6-41.1 22.2-60.6 9.9 3.1 19.3 6.5 28.1 10.2 35.4 15.1 58.3 34.9 58.3 50.6-.1 15.7-23 35.6-58.4 50.6z"></path>
+          <circle cx="420.9" cy="296.5" r="45.7"></circle>
+        </g>
+      </symbol>
+    
+      <symbol id="svg-img-2" viewBox="0 0 261.76 226.69">
+        <g transform="matrix(1.3333 0 0 -1.3333 -76.311 313.34)">
+          <g transform="translate(178.06 235.01)">
+            <path d="m0 0-22.669-39.264-22.669 39.264h-75.491l98.16-170.02 98.16 170.02z" fill="#41b883"></path>
+          </g>
+          <g transform="translate(178.06 235.01)">
+            <path d="m0 0-22.669-39.264-22.669 39.264h-36.227l58.896-102.01 58.896 102.01z" fill="#34495e"></path>
+          </g>
+        </g>
+      </symbol>
+    
+      <symbol id="svg-img-3" viewBox="0 0 512 314">
+        <defs>
+          <linearGradient x1="68.188%" y1="17.487%" x2="27.823%" y2="89.755%" id="b">
+            <stop stop-color="#41873F" offset="0%"></stop>
+            <stop stop-color="#418B3D" offset="32.88%"></stop>
+            <stop stop-color="#419637" offset="63.52%"></stop>
+            <stop stop-color="#3FA92D" offset="93.19%"></stop>
+            <stop stop-color="#3FAE2A" offset="100%"></stop>
+          </linearGradient>
+          <path id="a" d="M57.903 1.85a5.957 5.957 0 0 0-5.894 0L3.352 29.933c-1.85 1.04-2.89 3.005-2.89 5.085v56.286c0 2.08 1.156 4.045 2.89 5.085l48.657 28.085a5.957 5.957 0 0 0 5.894 0l48.658-28.085c1.849-1.04 2.89-3.005 2.89-5.085V35.019c0-2.08-1.157-4.045-2.89-5.085L57.903 1.85z"></path>
+          <linearGradient x1="43.277%" y1="55.169%" x2="159.245%" y2="-18.306%" id="d">
+            <stop stop-color="#41873F" offset="13.76%"></stop>
+            <stop stop-color="#54A044" offset="40.32%"></stop>
+            <stop stop-color="#66B848" offset="71.36%"></stop>
+            <stop stop-color="#6CC04A" offset="90.81%"></stop>
+          </linearGradient>
+          <linearGradient x1="-4413.77%" y1="13.43%" x2="5327.93%" y2="13.43%" id="e">
+            <stop stop-color="#6CC04A" offset="9.192%"></stop>
+            <stop stop-color="#66B848" offset="28.64%"></stop>
+            <stop stop-color="#54A044" offset="59.68%"></stop>
+            <stop stop-color="#41873F" offset="86.24%"></stop>
+          </linearGradient>
+          <linearGradient x1="-4.389%" y1="49.997%" x2="101.499%" y2="49.997%" id="f">
+            <stop stop-color="#6CC04A" offset="9.192%"></stop>
+            <stop stop-color="#66B848" offset="28.64%"></stop>
+            <stop stop-color="#54A044" offset="59.68%"></stop>
+            <stop stop-color="#41873F" offset="86.24%"></stop>
+          </linearGradient>
+          <linearGradient x1="-9713.77%" y1="36.21%" x2="27.93%" y2="36.21%" id="g">
+            <stop stop-color="#6CC04A" offset="9.192%"></stop>
+            <stop stop-color="#66B848" offset="28.64%"></stop>
+            <stop stop-color="#54A044" offset="59.68%"></stop>
+            <stop stop-color="#41873F" offset="86.24%"></stop>
+          </linearGradient>
+          <linearGradient x1="-103.861%" y1="50.275%" x2="100.797%" y2="50.275%" id="h">
+            <stop stop-color="#6CC04A" offset="9.192%"></stop>
+            <stop stop-color="#66B848" offset="28.64%"></stop>
+            <stop stop-color="#54A044" offset="59.68%"></stop>
+            <stop stop-color="#41873F" offset="86.24%"></stop>
+          </linearGradient>
+          <linearGradient x1="130.613%" y1="-211.069%" x2="4.393%" y2="201.605%" id="i">
+            <stop stop-color="#41873F" offset="0%"></stop>
+            <stop stop-color="#418B3D" offset="32.88%"></stop>
+            <stop stop-color="#419637" offset="63.52%"></stop>
+            <stop stop-color="#3FA92D" offset="93.19%"></stop>
+            <stop stop-color="#3FAE2A" offset="100%"></stop>
+          </linearGradient>
+        </defs>
+        <g fill="none">
+          <path d="M253.11 313.094c-1.733 0-3.351-.462-4.854-1.271l-15.371-9.13c-2.312-1.272-1.156-1.734-.462-1.965 3.12-1.04 3.698-1.272 6.934-3.12.347-.232.81-.116 1.156.115l11.789 7.05c.462.231 1.04.231 1.386 0l46.115-26.698c.462-.231.694-.694.694-1.271v-53.28c0-.579-.232-1.04-.694-1.272l-46.115-26.582c-.462-.232-1.04-.232-1.386 0l-46.115 26.582c-.462.231-.694.809-.694 1.271v53.28c0 .463.232 1.04.694 1.272l12.598 7.281c6.819 3.467 11.095-.578 11.095-4.623v-52.587c0-.693.578-1.387 1.387-1.387h5.894c.694 0 1.387.578 1.387 1.387v52.587c0 9.13-4.97 14.447-13.638 14.447-2.658 0-4.738 0-10.633-2.89l-12.135-6.934c-3.005-1.733-4.854-4.97-4.854-8.437v-53.28c0-3.467 1.849-6.704 4.854-8.437l46.114-26.698c2.89-1.618 6.82-1.618 9.709 0l46.114 26.698c3.005 1.733 4.855 4.97 4.855 8.437v53.28c0 3.467-1.85 6.704-4.855 8.437l-46.114 26.698c-1.503.694-3.236 1.04-4.854 1.04zm14.216-36.637c-20.225 0-24.386-9.246-24.386-17.105 0-.694.578-1.387 1.387-1.387h6.01c.693 0 1.271.462 1.271 1.156.925 6.125 3.583 9.13 15.834 9.13 9.708 0 13.87-2.196 13.87-7.397 0-3.005-1.157-5.2-16.297-6.703-12.598-1.272-20.457-4.045-20.457-14.1 0-9.362 7.86-14.91 21.035-14.91 14.793 0 22.075 5.086 23 16.18 0 .348-.116.694-.347 1.041-.232.231-.578.462-.925.462h-6.01c-.578 0-1.156-.462-1.271-1.04-1.387-6.356-4.97-8.437-14.447-8.437-10.633 0-11.905 3.699-11.905 6.472 0 3.352 1.503 4.392 15.834 6.241 14.216 1.85 20.92 4.508 20.92 14.447-.116 10.171-8.437 15.95-23.116 15.95z" fill="#539E43"></path>
+          <path d="M110.028 104.712c0-2.08-1.156-4.046-3.005-5.086l-49.004-28.2c-.81-.463-1.734-.694-2.658-.81h-.463c-.924 0-1.849.347-2.658.81l-49.004 28.2c-1.85 1.04-3.005 3.005-3.005 5.086l.116 75.817c0 1.04.578 2.08 1.502 2.543.925.578 2.08.578 2.89 0l29.125-16.643c1.849-1.04 3.005-3.005 3.005-5.085v-35.482c0-2.08 1.155-4.045 3.005-5.085l12.366-7.166c.925-.578 1.965-.81 3.005-.81 1.04 0 2.08.232 2.89.81l12.366 7.166c1.85 1.04 3.005 3.004 3.005 5.085v35.482c0 2.08 1.156 4.045 3.005 5.085l29.125 16.643c.925.578 2.08.578 3.005 0 .925-.463 1.503-1.503 1.503-2.543l-.116-75.817zM345.571.347c-.924-.463-2.08-.463-2.89 0-.924.578-1.502 1.502-1.502 2.542v75.125c0 .693-.346 1.386-1.04 1.849-.693.346-1.387.346-2.08 0l-12.251-7.05a5.957 5.957 0 0 0-5.895 0l-49.004 28.316c-1.849 1.04-3.005 3.005-3.005 5.085v56.516c0 2.08 1.156 4.046 3.005 5.086l49.004 28.316a5.957 5.957 0 0 0 5.895 0l49.004-28.316c1.849-1.04 3.005-3.005 3.005-5.086V21.844c0-2.196-1.156-4.16-3.005-5.201L345.572.347zm-4.507 143.776c0 .578-.231 1.04-.694 1.271l-16.758 9.708a1.714 1.714 0 0 1-1.503 0l-16.758-9.708c-.463-.231-.694-.809-.694-1.271v-19.417c0-.578.231-1.04.694-1.271l16.758-9.709a1.714 1.714 0 0 1 1.503 0l16.758 9.709c.463.23.694.809.694 1.271v19.417zM508.648 124.244c1.85-1.04 2.89-3.005 2.89-5.086v-13.753c0-2.08-1.156-4.045-2.89-5.085l-48.657-28.2a5.957 5.957 0 0 0-5.894 0l-49.004 28.315c-1.85 1.04-3.005 3.005-3.005 5.086v56.516c0 2.08 1.155 4.045 3.005 5.085l48.657 27.738c1.85 1.04 4.045 1.04 5.779 0L489 178.45c.925-.463 1.503-1.503 1.503-2.543 0-1.04-.578-2.08-1.503-2.543l-49.235-28.316c-.924-.577-1.502-1.502-1.502-2.542v-17.683c0-1.04.578-2.08 1.502-2.543l15.372-8.784a2.821 2.821 0 0 1 3.005 0l15.371 8.784c.925.578 1.503 1.502 1.503 2.543v13.869c0 1.04.578 2.08 1.502 2.542.925.578 2.08.578 3.005 0l29.125-16.99z" fill="#333"></path>
+          <path d="M456.293 121.586a1.05 1.05 0 0 1 1.155 0l9.362 5.432c.347.23.578.577.578 1.04v10.864c0 .462-.231.809-.578 1.04l-9.362 5.432a1.05 1.05 0 0 1-1.155 0l-9.362-5.432c-.347-.231-.578-.578-.578-1.04v-10.864c0-.463.231-.81.578-1.04l9.362-5.432z" fill="#539E43"></path>
+          <g transform="translate(134.068 70.501)">
+            <mask id="c" fill="#fff">
+              <use xlink:href="#a"></use>
+            </mask>
+            <use fill="url(#b)" xlink:href="#a"></use>
+            <g mask="url(#c)">
+              <path d="M51.893 1.85L3.121 29.933C1.27 30.974 0 32.94 0 35.02v56.286c0 1.387.578 2.658 1.502 3.698L56.285 1.156c-1.387-.231-3.005-.116-4.392.693zM56.632 125.053c.462-.116.925-.347 1.387-.578l48.773-28.085c1.85-1.04 3.005-3.005 3.005-5.085V35.019c0-1.502-.694-3.005-1.734-4.045l-51.43 94.079z"></path>
+              <path d="M106.676 29.934L57.788 1.85a8.025 8.025 0 0 0-1.503-.578L1.502 95.12a6.082 6.082 0 0 0 1.619 1.387l48.888 28.085c1.387.809 3.005 1.04 4.507.577l51.432-94.078c-.347-.462-.81-.81-1.272-1.156z" fill="url(#d)"></path>
+            </g>
+            <g mask="url(#c)">
+              <path d="M109.797 91.305V35.019c0-2.08-1.271-4.045-3.12-5.085L57.786 1.85a5.106 5.106 0 0 0-1.848-.693l53.511 91.42c.231-.347.347-.809.347-1.271zM3.12 29.934C1.272 30.974 0 32.94 0 35.02v56.286c0 2.08 1.387 4.045 3.12 5.085l48.889 28.085c1.156.693 2.427.925 3.814.693L3.467 29.818l-.346.116z"></path>
+              <path fill="url(#e)" fill-rule="evenodd" d="M50.391.809l-.693.347h.924l-.231-.347z" transform="translate(0 -9.246)"></path>
+              <path d="M106.792 105.636c1.387-.809 2.427-2.196 2.89-3.698L56.053 10.402c-1.387-.231-2.89-.116-4.16.693L3.351 39.065l52.355 95.465a8.057 8.057 0 0 0 2.196-.693l48.889-28.2z" fill="url(#f)" fill-rule="evenodd" transform="translate(0 -9.246)"></path>
+              <path fill="url(#g)" fill-rule="evenodd" d="M111.3 104.712l-.347-.578v.809l.346-.231z" transform="translate(0 -9.246)"></path>
+              <path d="M106.792 105.636l-48.773 28.085a6.973 6.973 0 0 1-2.196.693l.925 1.734 54.089-31.32v-.694l-1.387-2.312c-.231 1.618-1.271 3.005-2.658 3.814z" fill="url(#h)" fill-rule="evenodd" transform="translate(0 -9.246)"></path>
+              <path d="M106.792 105.636l-48.773 28.085a6.973 6.973 0 0 1-2.196.693l.925 1.734 54.089-31.32v-.694l-1.387-2.312c-.231 1.618-1.271 3.005-2.658 3.814z" fill="url(#i)" fill-rule="evenodd" transform="translate(0 -9.246)"></path>
+            </g>
+          </g>
+        </g>
+      </symbol>
+    </svg>
+    <style>
+      .ag-format-container {
+        font-family: "popins", sans-serif;
+        font-weight: bold;
+        width: 1142px;
+        margin: 0 auto;
+        top: -37px;
+        position: relative;
+      }
+      
+      
+      @font-face {
+        font-family: Heavitas;
+        src: url(https://raw.githack.com/SochavaAG/example-mycode/master/pens/1_fonts/Heavitas/Heavitas.eot);
+        src: url(https://raw.githack.com/SochavaAG/example-mycode/master/pens/1_fonts/Heavitas/Heavitas.woff2) format('woff2'),
+        url(https://raw.githack.com/SochavaAG/example-mycode/master/pens/1_fonts/Heavitas/Heavitas.woff) format('woff'),
+        url(https://raw.githack.com/SochavaAG/example-mycode/master/pens/1_fonts/Heavitas/Heavitas.ttf) format('truetype'),
+        url(https://raw.githack.com/SochavaAG/example-mycode/master/pens/1_fonts/Heavitas/Heavitas.svg#Heavitas) format('svg'),
+        url(https://raw.githack.com/SochavaAG/example-mycode/master/pens/1_fonts/Heavitas/Heavitas.eot?#iefix) format('embedded-opentype');
+        font-weight: normal;
+        font-style: normal;
+      }
+      
+      body {
+        font-size: medium;
+        color: #53545a;
+      }
+      
+      .ag-maecenas_title {
+        padding: 100px 0;
+        background-color: #0C3E91;
+      
+        text-align: center;
+        font-family: "Poppins" , sans-serif;
+        font-weight: 100;
+        font-size: 45px;
+        color: #FFF;
+      
+        position: relative;
+      }
+      .ag-maecenas_title:before {
+        content: "";
+        height: 125px;
+        width: 100%;
+        background: url(https://raw.githack.com/SochavaAG/example-mycode/master/pens/animation-wave-shadow/images/wave.svg) repeat-x scroll 0 0;
+        -webkit-background-size: 1600px 198px;
+        -moz-background-size: 1600px 198px;
+        -o-background-size: 1600px 198px;
+        background-size: 1600px 198px;
+      
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      
+        -webkit-filter: drop-shadow(5px -10px 3px rgba(0, 0, 0, .2));
+        filter: drop-shadow(5px -10px 3px rgba(0, 0, 0, .2));
+      
+        -webkit-animation: an-wave 20s linear infinite;
+        -moz-animation: an-wave 20s linear infinite;
+        -o-animation: an-wave 20s linear infinite;
+        animation: an-wave 20s linear infinite;
+      }
+      
+      .ag-maecenas_box {
+        padding: 70px 0;
+        background-color: #FFF;
+      
+        position: relative;
+      }
+      .ag-maecenas_item {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+      
+        padding: 0 0 120px;
+      }
+      .ag-maecenas_descr {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 60%;
+        -moz-box-flex: 1;
+        -ms-flex: 1 1 60%;
+        flex: 1 1 60%;
+         line-height: 2.5;
+      
+        padding: 0 40px;
+      
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      .ag-maecenas_title-item {
+        padding: 0 0 15px;
+      
+        font-family: Heavitas, sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+      }
+      .ag-maecenas_tagline-item {
+        padding: 0 0 15px;
+      
+        font-family: Heavitas, sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      .ag-rrequirement_item {
+        font-family: "poppins", sans-serif;
+        padding: 10px 10px 10px 20px;
+      
+        position: relative;
+      }
+      .ag-rrequirement_item:before {
+        content: "";
+        height: 6px;
+        width: 6px;
+        background-color: #00a2ff;
+      
+        position: absolute;
+        top: 50%;
+        left: 0;
+      
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+      
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+      .ag-maecenas_img-box {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 40%;
+        -moz-box-flex: 1;
+        -ms-flex: 1 1 40%;
+        flex: 1 1 40%;
+      
+        height: 300px;
+        padding: 0 15px;
+      
+        text-align: center;
+      }
+      .ag-maecenas_item:nth-child(odd) {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -webkit-flex-direction: row-reverse;
+        -moz-box-orient: horizontal;
+        -moz-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+      }
+      
+      .svg-img-block {
+        display: none;
+      }
+      
+      @-webkit-keyframes an-wave {
+        100% {
+          background-position-x: -1600px;
+        }
+      }
+      @-moz-keyframes an-wave {
+        100% {
+          background-position-x: -1600px;
+        }
+      }
+      @-o-keyframes an-wave {
+        100% {
+          background-position-x: -1600px;
+        }
+      }
+      @keyframes an-wave {
+        100% {
+          background-position-x: -1600px;
+        }
+      }
+      
+      @media screen and (max-width: 979px) {
+        .ag-maecenas_title {
+          font-size: 90px;
+        }
+        .ag-maecenas_descr {
+          padding: 0;
+        }
+      }
+      
+      @media only screen and (max-width: 767px) {
+        .ag-format-container {
+          width: 96%;
+        }
+      
+        .ag-maecenas_item {
+          -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+        }
+        .ag-maecenas_item:nth-child(odd) {
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: row;
+          -moz-box-orient: horizontal;
+          -moz-box-direction: normal;
+          -ms-flex-direction: row;
+          flex-direction: row;
+        }
+        .ag-maecenas_descr {
+          -webkit-box-flex: 0;
+          -webkit-flex: 0 0 100%;
+          -moz-box-flex: 0;
+          -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+          -webkit-box-ordinal-group: 3;
+          -moz-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+          order: 2;
+        }
+        .ag-maecenas_img-box {
+          -webkit-flex: 0 0 100%;
+          -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+          -webkit-box-flex: 0;
+          -moz-box-flex: 0;
+          -webkit-box-ordinal-group: 2;
+          -moz-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+          order: 1;
+      
+          height: 200px;
+          width: 100%;
+          min-width: 150px;
+          padding: 0;
+        }
+      }
+      
+      @media only screen and (max-width: 639px) {
+        .ag-maecenas_title {
+          font-size: 60px;
+        }
+      }
+      
+      @media only screen and (max-width: 479px) {
+        .ag-maecenas_title {
+          font-size: 40px;
+        }
+      }
+      
+      @media (min-width: 768px) and (max-width: 979px) {
+        .ag-format-container {
+          width: 750px;
+        }
+      
+      }
+      
+      @media (min-width: 980px) and (max-width: 1161px) {
+        .ag-format-container {
+          width: 960px;
+        }
+      
+      }
+      
+    </style>
+   
+  </section>
+
+
+  
+
+  <!-- end service section -->
+
+
+  
+ <!-- info section -->
+  
+ <section class="info_section layout_padding2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="info_contact">
+          <h4>
+            Address
+          </h4>
+          <div class="contact_link_box">
+            <a href="https://maps.app.goo.gl/2kFJhGfvk79e4sM8A">
+              <i class="fa fa-map-marker" aria-hidden="true">        Location</i>
+              <!-- <span>
+                Location
+              </span> -->
+            </a>
+            <a href="tel:+9500127110   ">
+              <i class="fa fa-phone" aria-hidden="true">          Call +91 9500127110</i>
+              <!-- <span>
+                Call +9500127110               </span> -->
+            </a>
+            <a href="mailto:connect@claidas.com">
+              <i class="fa fa-envelope" aria-hidden="true">         connect@claidas.com</i>
+              <!-- <span>
+                connect@claidas.com
+              </span> -->
+            </a> 
+          </div>
+        </div>
+       <div class="info_social">
+          <!--a href="#">
+              <i class="fab fa-facebook"></i>
+          </a>
+          <a href="#">
+              <i class="fab fa-twitter"></i>
+          </a>-->
+          <a href="https://www.linkedin.com/company/claidas-tech/">
+              <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://www.instagram.com/claidas_technologies/profilecard/?igsh=MXY4NWJybHM1MjlnNQ==">
+              <i class="fab fa-instagram"></i>
+          </a>
+      </div> 
+      <style>
+        .info_social {
+         display: flex;
+         gap: 10px; /* Adjust spacing between icons */
+     }
+     .info_social a {
+         color: #000; /* Icon color */
+         font-size: 24px; /* Adjust icon size */
+         text-decoration: none; /* Remove underline */
+     }
+     .info_social a:hover {
+         color: #007bff; /* Change color on hover */
+     }
+
+     </style>
+      </div>
+      <div class="col-md-3">
+        <div class="info_link_box">
+          <h4>
+            Links
+          </h4>
+          <div class="info_links">
+            <a class="active" href="index.php">
+              <img src="images/nav-bullet.png" alt="">
+              Home
+            </a>
+            <a class="" href="index.php#About">
+              <img src="images/nav-bullet.png" alt="">
+              About
+            </a>
+            <a class="" href="http://hrms.claidas.org/Main/Front/index.php#OUR%20SERVICES">
+              <img src="images/nav-bullet.png" alt="">
+              Services
+            </a>
+           
+            <a class="" href="index.php#Contact US">
+              <img src="images/nav-bullet.png" alt="">
+              Contact Us
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="info_detail">
+          <h4>
+            Info
+          </h4>
+          <p>
+            Specializing in Cloud, AI, and Data Analytics, our experts deliver cost-effective, powerful solutions across industries, helping clients unlock data’s potential to transform their business models.
+            </p>
+        </div>
+      </div>
+      <div class="col-md-3 mb-0">
+<h4>Subscribe</h4>
+<script>
+  function goToNewPage() {
+      // Redirect to the new page
+      window.location.href = "frontend.html";
+  }
+</script>
+<form action="process_form4.php" id="emailInput" method="POST">
+<input type="email" id="Subscribed" name="Subscribed" placeholder="Enter Email" required><br><br>
+<button type="submit" value="Submit" onclick="goToNewPage()">Subscribe</button>
+</form>
+<!-- <div id="emailInput" style="display: none; margin-top: 10px; color:white;">
+Thanks for subscribing!!!
+</div> -->
+</div>
+<script>
+  document.getElementById('subscribeForm').addEventListener('submit', function(event) {
+    // Check if the form is valid before proceeding
+    if (!this.checkValidity()) {
+      event.preventDefault(); // Prevent form submission if the input is invalid
+      return;
+    }
+    
+    event.preventDefault(); // Prevent the default form submission
+    
+    // Display the notification message
+    const notification = document.getElementById('notificationMessage');
+    notification.style.display = 'block';
+    
+    // Hide the notification message after 5 seconds (5000 milliseconds)
+    setTimeout(function() {
+      notification.style.display = 'none';
+    }, 5000);
+    
+    // Optionally, you can clear the input field after submission
+    document.getElementById('emailInput').value = '';
+  });
+</script>
+</section>
+
+  <!-- end info section -->
+
+
+  <!-- footer section -->
+   <!-- footer section -->
+   <footer class="footer_section">
+    <div class="container">
+      <p>
+        &copy; 2024 All Rights Reserved By
+        <a href="https://claidas.com/">Claidas Technologies</a>
+      </p>
+    </div>
+  </footer>
+  <style>
+    .footer_section {
+  position: relative;
+  background-color: #020230;
+  text-align: center;
+
+  p {
+    color: $white;
+    padding: 20px 0;
+    margin: 0;
+    border-top: 1px solid $white;
+
+    a {
+      color: inherit;
+    }
+  }
+}
+  </style>
+
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.js"></script>
+  <!-- custom js -->
+  <script src="js/custom.js"></script>
+
+
+</body>
+
+</html>

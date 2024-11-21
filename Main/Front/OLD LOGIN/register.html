@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claidas Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="login.scss">
+  <link rel="icon" type="images/png" href="images/favicon.png">
+</head>
+<body>
+
+
+  <div class="wrapper">
+    <div class="logo">
+      <img src="images/favicon.png" alt="">
+    </div>
+    <div class="text-center mt-4 name">
+      HRMS DEMO
+    </div>
+    <form class="p-3 mt-3" action="register.php" method="post">
+      <div class="form-field d-flex align-items-center">
+        <span class="far fa-user"></span>
+        <input type="text" name="name" id="name" placeholder="Name">
+      </div>
+      <div class="form-field d-flex align-items-center">
+        <span class="fas fa-mobile-alt"></span>
+        <input type="tel" name="mobile_no" id="mobile_no" placeholder="Mobile No.">
+      </div>
+      <div class="form-field d-flex align-items-center">
+        <span class="fas fa-envelope"></span>
+        <input type="email" name="email" id="email" placeholder="Email">
+      </div>
+      <div class="form-field d-flex align-items-center">
+        <span class="fas fa-mobile-alt"></span>
+        <input type="tel" name="otp" id="otp" placeholder="OTP">
+      </div>
+      <div  class="form-field d-flex align-items-center">
+        <button class="btn btn-primary" data-field="email">Get OTP</button>
+      </div>
+      <div class="form-field d-flex align-items-center">
+        <span class="fas fa-lock"></span>
+        <input type="password" name="password" id="password" placeholder="Password">
+      </div>
+      <div class="form-field d-flex align-items-center">
+        <span class="fas fa-lock"></span>
+        <input type="password" name="cnf_password" id="cnf_password" placeholder="Confirm Password">
+      </div>
+      <div class="text-center mt-2">
+        <button class="btn btn-primary" type="submit" value="Register">Register</button>
+      </div>
+    </form>
+    <div class="text-center fs-6">
+      <a href="#">Forget password?</a> or <a href="#">Sign up</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.otp-btn').click(function() {
+        const field = $(this).data('field'); // Get the data-field value
+        // Implement your OTP generation and sending logic here (replace with your actual implementation)
+        alert(`An OTP has been sent to your ${field}.`);
+      });
+    });
+  </script>
+</body>
+</html>
